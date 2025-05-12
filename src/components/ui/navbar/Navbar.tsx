@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import Container from "../Container/Container";
-import Logo from "@/assets/J.png";
+import Logo from "@/assets/logo/J.png";
 import {
   ActionButton,
   LogoWrapper,

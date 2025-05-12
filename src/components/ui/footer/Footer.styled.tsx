@@ -172,20 +172,3 @@ export const Copyright = styled.p`
   font-size: 0.9rem;
   margin: 0;
 `;
-
-export const FooterBottomLinks = styled.div`
-  display: flex;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-
-  a {
-    color: #b0b0b0;
-    text-decoration: none;
-    font-size: 0.9rem;
-    transition: color 0.3s ease;
-
-    &:hover {
-      color: var(--primary);
-    }
-  }
-`;

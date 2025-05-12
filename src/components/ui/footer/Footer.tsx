@@ -6,7 +6,6 @@ import {
   Copyright,
   FooterAbout,
   FooterBottom,
-  FooterBottomLinks,
   FooterColumn,
   FooterContent,
   FooterHeading,
@@ -15,7 +14,7 @@ import {
   FooterLogo,
   FooterWrapper,
 } from "./Footer.styled";
-import Logo from "@/assets/J.png";
+import Logo from "@/assets/logo/J.png";
 import Image from "next/image";
 
 export default function Footer() {
@@ -72,7 +71,7 @@ export default function Footer() {
 
         <FooterBottom>
           <Copyright>
-            © {currentYear} Jakub Urbański. Wszystkie prawa zastrzeżone.
+            © {currentYear} Jakub Urbański.
           </Copyright>
         </FooterBottom>
       </Container>

@@ -2,7 +2,7 @@
 import Heading from "../ui/Headings/H2/Heading";
 import Section from "../ui/Section/Section";
 import { useForm } from "react-hook-form";
-import ContactImageSrc from "@/assets/casino.webp";
+import ContactImageSrc from "@/assets/projects/casino.webp";
 import { Loader2 } from "lucide-react";
 import {
   AlertContainer,

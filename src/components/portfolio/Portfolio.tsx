@@ -1,11 +1,11 @@
 import Section from "../ui/Section/Section";
 import Heading from "../ui/Headings/H2/Heading";
-import AnimeImage from "@/assets/naruto.jpg";
-import PodiatryImage from "@/assets/podologia.webp";
-import VODImage from "@/assets/vod.webp";
-import TakelinkImage from "@/assets/takelink.jpg";
-import CasinoImage from "@/assets/casino.webp";
-import BlogImage from "@/assets/blog.avif";
+import AnimeImage from "@/assets/projects/naruto.jpg";
+import PodiatryImage from "@/assets/projects/podologia.webp";
+import VODImage from "@/assets/projects/vod.webp";
+import TakelinkImage from "@/assets/projects/takelink.jpg";
+import CasinoImage from "@/assets/projects/casino.webp";
+import BlogImage from "@/assets/projects/blog.avif";
 import {
   CardContent,
   CardOverlay,
