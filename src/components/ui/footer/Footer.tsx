@@ -62,17 +62,28 @@ export default function Footer() {
           </FooterColumn>
 
           <FooterColumn>
-            <FooterHeading>Contact</FooterHeading>
+            <FooterHeading>Social links</FooterHeading>
             <ContactInfo>
-              <ContactItem>urbanskisoftware@gmail.com</ContactItem>
+              <ContactItem
+                rel="nofollow noopener noreferrer"
+                target="_blank"
+                href="https://www.linkedin.com/in/jakub-urba%C5%84ski-99a2k/"
+              >
+                Linkedin
+              </ContactItem>
+              <ContactItem
+                rel="nofollow noopener noreferrer"
+                target="_blank"
+                href="https://github.com/kvbaurb99"
+              >
+                GitHub
+              </ContactItem>
             </ContactInfo>
           </FooterColumn>
         </FooterContent>
 
         <FooterBottom>
-          <Copyright>
-            © {currentYear} Jakub Urbański.
-          </Copyright>
+          <Copyright>© {currentYear} Jakub Urbański.</Copyright>
         </FooterBottom>
       </Container>
     </FooterWrapper>

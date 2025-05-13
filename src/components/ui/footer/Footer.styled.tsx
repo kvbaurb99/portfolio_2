@@ -136,7 +136,7 @@ export const ContactInfo = styled.div`
   gap: 1rem;
 `;
 
-export const ContactItem = styled.div`
+export const ContactItem = styled.a`
   display: flex;
   color: #b0b0b0;
   margin-bottom: 0.5rem;
