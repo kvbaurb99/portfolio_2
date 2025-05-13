@@ -138,7 +138,7 @@ const PortfolioSection = () => {
                     <Tag key={i}>{tag}</Tag>
                   ))}
                 </TagsContainer>
-                {project.link !== "special" ? (
+                {project.link !== "special" && project.link ? (
                   <a
                     rel="nofollow noopener noreferrer"
                     target="_blank"
