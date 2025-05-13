@@ -21,7 +21,7 @@ import {
 export default function MissionAndValues() {
   return (
     <Section id="about-me">
-      <Heading title="Who I am and what I do?" />
+      <Heading title="What I do?" />
       <WhyUsContainer>
         <FeatureRow>
           <ImageContainer>
