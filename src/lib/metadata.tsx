@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Background from "@/assets/header/northern-lights-jvwfhimjjaamngpk.jpg";
+import Background from "@/assets/header/header_image.webp";
 
 const metadataGlobal: Metadata = {
   title: "Jakub Urbański Software Developments | Bielsko-Biała",
