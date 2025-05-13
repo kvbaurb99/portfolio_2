@@ -6,7 +6,6 @@ import HeaderImage from "@/assets/header/northern-lights-jvwfhimjjaamngpk.jpg";
 export const HeaderWrapper = styled.header`
   position: relative;
   background-image: url(${HeaderImage.src});
-  background-attachment: fixed;
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -16,6 +15,10 @@ export const HeaderWrapper = styled.header`
   justify-content: center;
   align-items: center;
   overflow: hidden;
+
+  @media (min-width: 768px) {
+    background-attachment: fixed;
+  }
 
   &::before {
     content: "";
