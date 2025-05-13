@@ -77,6 +77,10 @@ export const HeroSubtitle = styled.p`
   margin-left: auto;
   margin-right: auto;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  @media (max-width: 768px) {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
 `;
 
 export const CTAButton = styled.a`
@@ -93,6 +97,11 @@ export const CTAButton = styled.a`
   position: relative;
   overflow: hidden;
   z-index: 1;
+
+  @media (max-width: 768px) {
+    font-size: 0.9rem;
+    padding: 1rem 2.2rem;
+  }
 
   &::before {
     content: "";
