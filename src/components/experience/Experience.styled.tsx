@@ -3,9 +3,9 @@ import styled, { keyframes } from "styled-components";
 import TestImage from "@/assets/header/windows-11-dark-mode-abstract-background-black-background-1920x1080-8710.jpg";
 
 interface TimelineItemProps {
-    $isEven: boolean;
-    $delay: number;
-  }
+  $isEven: boolean;
+  $delay: number;
+}
 
 // Animation keyframes
 export const fadeInLeft = keyframes`
@@ -62,6 +62,10 @@ export const CustomSection = styled.section`
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+
+  @media (max-width: 768px) {
+    background-repeat: repeat;
+  }
 
   &::before {
     content: "";
@@ -197,7 +201,7 @@ export const CompanyHeader = styled.div`
 `;
 
 export const CompanyLogo = styled.div`
-position: relative;
+  position: relative;
   width: 50px;
   height: 50px;
   border-radius: 50%;
