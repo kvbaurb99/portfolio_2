@@ -9,6 +9,9 @@ const metadataGlobal: Metadata = {
     index: false,
     follow: false,
   },
+  alternates: {
+    canonical: "https://urbanski-frontend.pl",
+  },
   openGraph: {
     title: "Jakub Urbański Software Developments | Poland",
     description:
