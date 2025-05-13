@@ -1,6 +1,6 @@
 "use client";
 import styled from "styled-components";
-import HeaderImage from "@/assets/header/northern-lights-jvwfhimjjaamngpk.jpg";
+import HeaderImage from "@/assets/header/header_image.webp";
 
 // Styled components
 export const HeaderWrapper = styled.header`
