@@ -165,7 +165,7 @@ export const TimelineDot = styled.div`
   animation: ${pulse} 2s infinite;
 
   @media (max-width: 768px) {
-    left: 20px;
+    left: 10px;
     transform: translateX(0);
   }
 `;
