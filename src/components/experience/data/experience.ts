@@ -22,7 +22,7 @@ export const experiences: ExperienceType[] = [
     id: "company2",
     company: "IT Freelancer",
     position: "Frontend Developer",
-    period: "2019 - 2022",
+    period: "2022 - present",
     description:
       "Specializing in the design and implementation of responsive user interfaces using React.js and Next.js. Performing end-to-end website performance optimization, increasing performance ratings. Experience in CMS integration and REST API implementation ensuring seamless data synchronization.",
     skills: [
@@ -39,7 +39,7 @@ export const experiences: ExperienceType[] = [
     id: "company3",
     company: "Komputronik S.A.",
     position: "IT Technician",
-    period: "2017 - 2019",
+    period: "2020 - 21",
     description:
       "Comprehensive technical support for customers in the diagnosis and repair of computer hardware, including installation of components, installation of operating systems, and troubleshooting of hardware and software problems. Specializing in configuring new computer sets according to customers' needs and providing professional advice on the selection of components and software.",
     skills: [
