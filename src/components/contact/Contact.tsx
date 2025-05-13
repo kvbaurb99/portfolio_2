@@ -104,13 +104,7 @@ export default function ContactSection() {
           <AlertDescription>Message sent succesfully</AlertDescription>
         </Alert>
       )}
-      <ContactImage
-        src={ContactImageSrc}
-        width={520}
-        height={360}
-        loading="lazy"
-        alt="Contact image"
-      />
+
     </Section>
   );
 }
