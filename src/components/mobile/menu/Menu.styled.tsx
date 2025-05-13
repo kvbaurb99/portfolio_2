@@ -5,7 +5,6 @@ interface MenuItemProps {
     $index: number;
   }
 
-
 const slideIn = keyframes`
   from {
     opacity: 0;

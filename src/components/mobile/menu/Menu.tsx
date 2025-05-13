@@ -18,7 +18,7 @@ interface MenuItemType {
   href: string;
 }
 
-const Menu: React.FC<MenuProps> = ({ isOpen, onClose }) => {
+const Menu = ({ isOpen, onClose }: MenuProps) => {
   const menuItems: MenuItemType[] = [
     { title: "Home", href: "#home" },
     { title: "About", href: "#about-me" },
