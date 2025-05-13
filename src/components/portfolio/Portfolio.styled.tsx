@@ -5,10 +5,6 @@ interface ProjectCardProps {
   $index: number;
 }
 
-interface ProjectImageProps {
-  $imageUrl: string;
-}
-
 const fadeIn = keyframes`
   from {
     opacity: 0;
@@ -88,6 +84,10 @@ export const ProjectCard = styled.div<ProjectCardProps>`
   animation: ${fadeIn} 0.5s ease forwards;
   animation-delay: ${(props) => props.$index * 0.1}s;
   opacity: 0;
+  
+  &:hover .project-image {
+    transform: scale(1.05);
+  }
 `;
 
 export const ProjectImageContainer = styled.div`
@@ -95,20 +95,7 @@ export const ProjectImageContainer = styled.div`
   width: 100%;
   height: 200px;
   overflow: hidden;
-`;
-
-export const ProjectImage = styled.div<ProjectImageProps>`
-  width: 100%;
-  height: 100%;
   background-color: #2a2a2a;
-  background-image: ${(props) => `url(${props.$imageUrl})`};
-  background-size: cover;
-  background-position: center;
-  transition: transform 0.5s ease;
-
-  ${ProjectCard}:hover & {
-    transform: scale(1.05);
-  }
 `;
 
 export const CardOverlay = styled.div`
@@ -124,6 +111,7 @@ export const CardOverlay = styled.div`
   );
   opacity: 0.7;
   transition: opacity 0.3s ease;
+  z-index: 1;
 `;
 
 export const CardContent = styled.div`

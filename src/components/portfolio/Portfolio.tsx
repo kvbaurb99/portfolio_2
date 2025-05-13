@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Section from "../ui/Section/Section";
 import Heading from "../ui/Headings/H2/Heading";
 import AnimeImage from "@/assets/projects/naruto.jpg";
@@ -12,7 +13,6 @@ import {
   ContentContainer,
   ProjectCard,
   ProjectDescription,
-  ProjectImage,
   ProjectImageContainer,
   ProjectsGrid,
   ProjectTitle,
@@ -105,7 +105,19 @@ const PortfolioSection = () => {
           {projects.map((project, index) => (
             <ProjectCard key={project.id} $index={index}>
               <ProjectImageContainer>
-                <ProjectImage $imageUrl={project.image} />
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  fill
+                  loading="lazy"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  style={{
+                    objectFit: "cover",
+                    objectPosition: "center",
+                    transition: "transform 0.5s ease",
+                  }}
+                  className="project-image"
+                />
                 <CardOverlay />
               </ProjectImageContainer>
 
