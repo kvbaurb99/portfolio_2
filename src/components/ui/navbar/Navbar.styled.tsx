@@ -42,11 +42,13 @@ export const Nav = styled.nav`
 `;
 
 export const NavContainer = styled.div`
+position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 100%;
   padding: 0;
+  z-index: 200;
 `;
 
 export const LogoWrapper = styled.div`
@@ -64,7 +66,7 @@ export const NavLinks = styled.div`
   display: flex;
   gap: 2rem;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     display: none;
   }
 `;

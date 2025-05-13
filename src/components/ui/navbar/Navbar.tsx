@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import Container from "../Container/Container";
+import { Menu as MenuIcon } from "lucide-react";
 import Logo from "@/assets/logo/J.png";
 import {
   ActionButton,
@@ -12,6 +13,7 @@ import {
   Overlay,
 } from "./Navbar.styled";
 import Image from "next/image";
+import Menu from "@/components/mobile/menu/Menu";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -33,6 +35,10 @@ export default function Navbar() {
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const handleCloseMenu = () => {
+    setIsMenuOpen(false);
   };
 
   return (
@@ -57,11 +63,23 @@ export default function Navbar() {
             <ActionButton href="/resume/resume.pdf" download={true}>
               Download Resume
             </ActionButton>
+
+            <MenuIcon
+              width={26}
+              height={26}
+              color="#fff"
+              onClick={toggleMenu}
+              className="lg:hidden"
+              style={{ cursor: "pointer" }}
+            />
           </NavContainer>
         </Container>
+        {/* Only render Menu when open */}
+        {isMenuOpen && <Menu isOpen={isMenuOpen} onClose={handleCloseMenu} />}
       </Nav>
 
-      <Overlay $isOpen={isMenuOpen} onClick={toggleMenu} />
+      {/* Only render overlay when menu is open */}
+      {isMenuOpen && <Overlay $isOpen={isMenuOpen} onClick={handleCloseMenu} />}
     </>
   );
 }
