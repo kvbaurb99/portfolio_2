@@ -61,10 +61,15 @@ export const CustomSection = styled.section`
   background-image: url(${TestImage.src});
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
 
-  @media (max-width: 768px) {
-    background-repeat: repeat;
+  /* Używaj fixed background tylko na większych ekranach */
+  @media (min-width: 768px) {
+    background-attachment: fixed;
+  }
+
+  /* Na mniejszych urządzeniach użyj normalnego tła */
+  @media (max-width: 767px) {
+    background-attachment: scroll;
   }
 
   &::before {
