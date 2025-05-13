@@ -1,5 +1,4 @@
 "use client";
-import { useEffect, useState } from "react";
 import styled, { keyframes } from "styled-components";
 
 // Define TypeScript interfaces
@@ -149,8 +148,6 @@ const MenuButton = styled.button`
 `;
 
 const Menu: React.FC<MenuProps> = ({ isOpen, onClose }) => {
-  const [mounted, setMounted] = useState<boolean>(false);
-
   // Menu items
   const menuItems: MenuItemType[] = [
     { title: "Home", href: "#home" },
@@ -161,20 +158,6 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose }) => {
     { title: "Contact", href: "#contact" },
   ];
 
-  // Handle escape key
-  useEffect(() => {
-    setMounted(true);
-
-    const handleEscape = (e: KeyboardEvent) => {
-      if (e.key === "Escape" && isOpen) {
-        onClose();
-      }
-    };
-
-    document.addEventListener("keydown", handleEscape);
-    return () => document.removeEventListener("keydown", handleEscape);
-  }, [isOpen, onClose]);
-
   // Click outside to close
   const handleOverlayClick = (e: React.MouseEvent<HTMLDivElement>) => {
     if (e.target === e.currentTarget) {
@@ -182,7 +165,7 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose }) => {
     }
   };
 
-  if (!isOpen || !mounted) return null;
+  if (!isOpen) return null;
 
   return (
     <>
