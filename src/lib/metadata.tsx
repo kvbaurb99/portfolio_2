@@ -2,18 +2,18 @@ import type { Metadata } from "next";
 import Background from "@/assets/header/header_image.webp";
 
 const metadataGlobal: Metadata = {
-  title: "Jakub Urbański Software Developments | Bielsko-Biała",
+  title: "Jakub Urbański Software Developments | Poland",
   description:
-    "Doświadczony Front-end Developer z Bielska-Białej, specjalizujący się w responsywnych stronach internetowych zoptymalizowanych pod SEO.",
+    "Experienced Front-end Developer from Poland, specializing in responsive websites optimized for SEO.",
   robots: {
     index: false,
     follow: false,
   },
   openGraph: {
-    title: "Jakub Urbański Software Developments | Bielsko-Biała",
+    title: "Jakub Urbański Software Developments | Poland",
     description:
-      "Odkryj, jak łączę wiedzę front-endową z AI, tworząc nowoczesne, responsywne strony. Z siedzibą w Bielsku-Białej, obsługuję klientów w całej Polsce.",
-    url: `https://urbanski-dev.pl`,
+      "Experienced Front-end Developer from Poland, specializing in responsive websites optimized for SEO.",
+    url: `https://urbanski-frontend.pl/`,
     siteName: "Jakub Urbański",
     images: [
       {
@@ -22,7 +22,7 @@ const metadataGlobal: Metadata = {
         height: 600,
       },
     ],
-    locale: "pl",
+    locale: "en",
     type: "website",
   },
   icons: {
