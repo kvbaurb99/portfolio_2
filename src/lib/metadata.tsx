@@ -25,6 +25,14 @@ const metadataGlobal: Metadata = {
     locale: "pl",
     type: "website",
   },
+  icons: {
+    icon: [
+      {
+        url: "/favicon.png",
+        href: "/favicon.png",
+      },
+    ],
+  },
 };
 
 export default metadataGlobal;
