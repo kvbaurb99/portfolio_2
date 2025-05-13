@@ -40,7 +40,7 @@ const PortfolioSection = () => {
       id: "e-commerce-platform",
       title: "Takelink domain marketplace",
       description:
-        "A modern e-commerce platform built with Next.js, Stripe, and Sanity CMS offering seamless shopping experience.",
+        "Takelink - is a platform where users can buy publications about their service or website.",
       image: TakelinkImage.src,
       tags: [
         "Next.js",
@@ -56,7 +56,7 @@ const PortfolioSection = () => {
       id: "dashboard-app",
       title: "VOD CMS",
       description:
-        "Interactive dashboard with real-time data visualization for business metrics and KPIs.",
+        "VODCMS - appearance for the movie and series search engine.",
       image: VODImage.src,
       tags: ["React", "Next.js", "Redis", "Styled Components"],
     },
@@ -64,7 +64,7 @@ const PortfolioSection = () => {
       id: "weather-app",
       title: "VOD Anime CMS",
       description:
-        "Elegant weather forecasting app with location-based services and interactive maps.",
+        "VODCMS - appearance for the animes search engine.",
       image: AnimeImage.src,
       tags: ["React", "Next.js", "Redis", "Styled Components"],
     },
@@ -72,7 +72,7 @@ const PortfolioSection = () => {
       id: "social-network",
       title: "Blog CMS",
       description:
-        "Full-stack social media application with real-time messaging and content sharing.",
+        "BlogCMS - appearance for the blog site.",
       image: BlogImage.src,
       tags: ["React", "Next.js", "Redis", "Styled Components"],
     },
@@ -80,7 +80,7 @@ const PortfolioSection = () => {
       id: "fitness-tracker",
       title: "Casino CMS",
       description:
-        "Mobile-first application for tracking workouts, nutrition, and progress with personalized insights.",
+        "A modern, responsive user interface for the content management system (CMS) of a casino platform",
       image: CasinoImage.src,
       tags: ["React", "Next.js", "Redis", "Styled Components"],
     },
@@ -88,7 +88,7 @@ const PortfolioSection = () => {
       id: "portfolio-template",
       title: "Podiatry Website",
       description:
-        "Customizable portfolio template for developers and designers with animation effects.",
+        "A modern, responsive user interface for a podiatry website.",
       image: PodiatryImage.src,
       tags: ["React", "Next.js", "Styled Components"],
       link: "https://podologjaworze.pl/",
