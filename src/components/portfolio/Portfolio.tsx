@@ -7,6 +7,7 @@ import VODImage from "@/assets/projects/vod.webp";
 import TakelinkImage from "@/assets/projects/takelink.jpg";
 import CasinoImage from "@/assets/projects/casino.webp";
 import BlogImage from "@/assets/projects/blog.avif";
+import PortfolioImage from "@/assets/header/header_image.webp";
 import {
   CardContent,
   CardOverlay,
@@ -63,16 +64,14 @@ const PortfolioSection = () => {
     {
       id: "weather-app",
       title: "VOD Anime CMS",
-      description:
-        "VODCMS - appearance for the animes search engine.",
+      description: "VODCMS - appearance for the animes search engine.",
       image: AnimeImage.src,
       tags: ["React", "Next.js", "Redis", "Styled Components"],
     },
     {
       id: "social-network",
       title: "Blog CMS",
-      description:
-        "BlogCMS - appearance for the blog site.",
+      description: "BlogCMS - appearance for the blog site.",
       image: BlogImage.src,
       tags: ["React", "Next.js", "Redis", "Styled Components"],
     },
@@ -93,6 +92,15 @@ const PortfolioSection = () => {
       tags: ["React", "Next.js", "Styled Components"],
       link: "https://podologjaworze.pl/",
     },
+    {
+      id: "portfolio-website",
+      title: "Portfolio Website",
+      description:
+        "A personal portfolio website showcasing my projects and skills.",
+      image: PortfolioImage.src,
+      tags: ["React", "Next.js", "Styled Components"],
+      link: "special",
+    },
   ];
 
   return (
@@ -103,7 +111,7 @@ const PortfolioSection = () => {
 
         <ProjectsGrid>
           {projects.map((project, index) => (
-            <ProjectCard key={project.id} $index={index}>
+            <ProjectCard key={index} $index={index}>
               <ProjectImageContainer>
                 <Image
                   src={project.image}
@@ -130,7 +138,7 @@ const PortfolioSection = () => {
                     <Tag key={i}>{tag}</Tag>
                   ))}
                 </TagsContainer>
-                {project.link ? (
+                {project.link !== "special" ? (
                   <a
                     rel="nofollow noopener noreferrer"
                     target="_blank"
@@ -138,6 +146,12 @@ const PortfolioSection = () => {
                   >
                     <ViewProjectButton>View Project</ViewProjectButton>
                   </a>
+                ) : project.link === "special" ? (
+                  <ViewProjectButton>
+                    {project.link === "special"
+                      ? "You are here!"
+                      : "View Project"}
+                  </ViewProjectButton>
                 ) : null}
               </CardContent>
             </ProjectCard>

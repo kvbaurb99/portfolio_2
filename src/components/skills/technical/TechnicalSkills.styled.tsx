@@ -30,6 +30,10 @@ export const Skill = styled.a<SkillLineProps>`
   color: #fff;
   opacity: ${(props) => (props.$isLink ? 1 : 0.5)};
   margin: 0 0.125rem;
+  &:hover {
+    transform: translateY(-0.125rem);
+    transition: all 0.2s ease-in-out;
+  }
 `;
 
 export const SkillBottomLine = styled.div<SkillLineProps>`

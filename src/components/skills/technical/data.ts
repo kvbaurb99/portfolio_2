@@ -132,6 +132,7 @@ export const useSkills = () => {
           { name: "PyCharm", link: "https://www.jetbrains.com/pycharm/" },
           { name: "Postman", link: "https://www.postman.com/" },
           { name: "Testfully", link: "https://testfully.io/" },
+          { name: "Google Search Console", link: "https://search.google.com/search-console/about" },
           {
             name: "Redis Insight",
             link: "https://redis.com/redis-enterprise/redis-insight/",
