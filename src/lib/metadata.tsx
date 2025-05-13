@@ -6,8 +6,8 @@ const metadataGlobal: Metadata = {
   description:
     "Doświadczony Front-end Developer z Bielska-Białej, specjalizujący się w responsywnych stronach internetowych zoptymalizowanych pod SEO.",
   robots: {
-    index: true,
-    follow: true,
+    index: false,
+    follow: false,
   },
   openGraph: {
     title: "Jakub Urbański Software Developments | Bielsko-Biała",
