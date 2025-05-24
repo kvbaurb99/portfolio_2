@@ -6,8 +6,8 @@ const metadataGlobal: Metadata = {
   description:
     "Experienced Front-end Developer from Poland, specializing in responsive websites optimized for SEO.",
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
   },
   alternates: {
     canonical: "https://urbanski-frontend.pl",
