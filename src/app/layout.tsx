@@ -5,6 +5,7 @@ import StyledComponentsRegistry from "@/lib/registry";
 import fonts from "@/lib/fonts";
 import metadataGlobal from "@/lib/metadata";
 import Footer from "@/components/ui/footer/Footer";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = metadataGlobal;
 
@@ -17,6 +18,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      {/* Vercel Analytics */}
+      <Analytics />
       <body className={`${roboto.className} antialiased`}>
         <StyledComponentsRegistry>
           <main>
