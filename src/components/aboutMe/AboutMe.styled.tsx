@@ -105,7 +105,7 @@ export const ContentBox = styled.div`
   color: #1f2937;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
     0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  border: 1px solid rgba(245, 158, 11, 0.1);
+  border: 1px solid rgba(11, 190, 116, 0.1);
 `;
 
 export const FeatureTitle = styled.h3`

@@ -132,7 +132,10 @@ export const useSkills = () => {
           { name: "PyCharm", link: "https://www.jetbrains.com/pycharm/" },
           { name: "Postman", link: "https://www.postman.com/" },
           { name: "Testfully", link: "https://testfully.io/" },
-          { name: "Google Search Console", link: "https://search.google.com/search-console/about" },
+          {
+            name: "Google Search Console",
+            link: "https://search.google.com/search-console/about",
+          },
           {
             name: "Redis Insight",
             link: "https://redis.com/redis-enterprise/redis-insight/",
@@ -141,7 +144,10 @@ export const useSkills = () => {
       },
       {
         name: "Project Tools",
-        items: [{ name: "Figma", link: "https://www.figma.com/" }],
+        items: [
+          { name: "Figma", link: "https://www.figma.com/" },
+          { name: "Vercel", link: "https://vercel.com/" },
+        ],
       },
       {
         name: "AI Tools",
